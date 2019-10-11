@@ -27,25 +27,41 @@
 
 <h2>Project</h2>
 
-<h3>Cheetah DBMS (2018-Present)</h3> 
+<h3>Cheetah Database Management System (2018-Present)</h3> 
 <p> XX </p>
 
 <h3>Parallel Index Search Operation for DBMS via GPUs (2018-Present)</h3> 
-<p> Concurrently handle a large number of queries is a crucial characteristic of today's in-memory database system.  By supporting such characteristics, index structure becomes a vital role in a database system.  In recent years, GPUs have become the leading hardware for parallel computing. The unique architecture of high-performance computation, however, provides abundant opportunities for optimizing the algorithm towards better performance and achieving high utilization of GPU resources. This study presents our recent work in designing and optimizing parallel algorithms for index-search on Graphics Processing Units (GPUs). We introduce a dynamic index structure on GPU and techniques to optimize the searching operation. Since the dynamic data structure has a high overhead on GPUs, we introduce our memory allocator, which only costs tiny overhead. In terms of searching operation, we present techniques to optimize the search operation on both exact and range searches by using a novel grouping technique that can maximize the utilization of an on-chip GPU cache system.</p>
+<p> Concurrently handle a large number of queries is a crucial characteristic of today's in-memory database system.  By supporting such characteristics, index structure becomes a vital role in a database system.  In recent years, GPUs have become the leading hardware for parallel computing. The unique architecture of high-performance computation, however, provides abundant opportunities for optimizing the algorithm towards better performance and achieving high utilization of GPU resources. This study presents our recent work in designing and optimizing parallel algorithms for index-search on Graphics Processing Units (GPUs). We introduce a dynamic index structure on GPU and techniques to optimize the searching operation. Since the dynamic data structure has a high overhead on GPUs, we introduce our memory allocator, which only costs tiny overhead. In terms of searching operation, we present techniques to optimize the search operation on both exact and range searches by using a novel grouping technique that can maximize the utilization of an on-chip GPU cache system.
+</p>
+
+
 
 <h2>Accomplished Projects</h2>
 
-<h3> Support Measures for Counting Frequent Patterns in Graphs (2017-2018) </h3> 
-<p> This research XXX</p>
+<h3> Support Measures for Counting Frequent Patterns in single-graph databases (2017-2018) </h3> 
+<p> Frequent pattern mining has been an attractive subject in data mining research for decades. Furthermore, as today, rapid growing network data is creating a great potential for knowledge discovery from graph data, especially single-graph databases as efficient structures representing these complex relationships are becoming more and more valuable and significant. There are two problems in frequent pattern mining in a single-graph setting, support measure, and search scheme. In this project, we address the challenge of implement a high-performance polynomial and non-polynomial calculation of new support measures by mapping to the optimization problem. The outcome of the project is a software that can calculate a support measure in graph frequent pattern analysis with the linear time but still preserve the number of counting close to the actual value.
+</p>
+
+<p>
+    <b>Publication: </b><a href="https://dl.acm.org/citation.cfm?doid=3335783.3335810">SSDBM2019</a>
+</p>
 
 <h3> Algorithms for Computing 2-body Statistics on GPUs (2015-2018) </h3> 
 <p> Various types of two-body statistics (2-BS) are regarded as essen- tial components of low-level data analysis in scientific database systems. In relational algebraic terms, a 2-BS is essentially a Cartesian product between two datasets (or two instances of the same dataset) followed by a user-defined aggregate. The quadratic complexity of these computations hinders timely pro- cessing of data. Use of modern parallel hardware has thus become an obvious solution to meet such challenges. This paper presents our recent work on de- signing and optimizing parallel algorithms for 2-BS computation on Graphics Processing Units (GPUs). Although a typical 2-BS problem can be summa- rized into a straightforward parallel computing pattern, traditional knowledge from (general) parallel computing often falls short in delivering the best pos- sible performance. Therefore, we present a suite of techniques to decompose 2-BS problems and methods for effective use of computing resources on GPUs. We also develop analytical models that guide us towards finding the best pa- rameters of our GPU programs. As a result, we achieve the design of highly- optimized 2-BS algorithms that significantly outperform the best known GPU and CPU implementations. Although 2-BS problems share the same core com- putations, each 2-BS problem however carries its own characteristics that calls for different strategies in code optimization. For that, we develop a software framework that automatically generates high-performance GPU code based on a few parameters and short primer code input. We further present two case studies to demonstrate that code generated by this framework reaches a very high level of efficiency.</p>
+
+<p>
+    <b>Publication: </b><a href="https://ieeexplore.ieee.org/document/7573839">ICPP2016</a>, <a href="https://www.nvidia.com/content/dam/en-zz/Solutions/gtc/conference-posters/GTC19_Performance_Optimization_01_P9139_Napath_Pitaksirianan_1920x1607.png">GTC2016</a>, <a href="http://on-demand.gputechconf.com/gtc/2017/posters/images/1920x1607/GTC_2017_Performance%20Optimization_PO_01_P7169_WEB.png">GTC2018</a>, <a href="https://link.springer.com/article/10.1007/s10619-018-7238-0">DAPB2018</a>
+</p>
 
 <h3> Study the access pattern of tuples/pages in a database system (2014) </h3> 
 <p> Database management system (DBMS) manages a huge amount of data, and in the course of processing the requiredspace for the blocks of data will often be greater than the memory space available. For this there is the need to manage a memory in which to load and unload the blocks. The buffer manager is responsible primarily for managing the operations. In this project we modified the POSTGRESQL code to track the frequency by which each tuple or page is accessed by the DBMS. Tracking the frequency of each page or tuple helps in using buffer more efficiently. For example if we want to place data items of similar popularities together, this project helps managing the buffer efficiently.</p>
 
 <h3>Parallel Keyword Searching utilizing a GPU for Network Forensics (2012)</h3> 
 <p> Nowadays, there is an increasing number of cybercrime on the Internet. Governments, businesses and individuals are in great risk. In order to trace back to criminals, lawful interception may be required. However, it is a complex and computation intensive task. The advent of Graphics Processing Units (GPUs) can offer highly parallel computing power with great performance at a low cost to such a task. This paper; therefore, focus on using a GPU for keyword searching in network traffic. The KMP skip searching algorithm was selected as the experimental string searching algorithm. Various parameters of the GPU were also investigated to obtain the optimal value for this application.</p>
+
+<p>
+    <b>Publication: </b><a href="doc/ICSEC2012.pdf">ICSEC2012</a>
+</p>
 
 
 <h2>Publication</h2>
@@ -69,7 +85,8 @@
 <div class="menu">
 <div class="menu_title">Main menu</div>
 <ul>
-<li><a href="#" class="menu_link">Contact me</a></li>
+<li><a href="index.html" class="menu_link">Home</a></li>
+<li><a href="contact.html" class="menu_link">Contact Me</a></li>
 </ul>
 </div>
 
