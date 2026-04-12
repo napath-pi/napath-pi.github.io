@@ -3,299 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Napath Pitaksirianan | Model Portfolio</title>
-  <meta name="description" content="Portfolio of Dr. Napath Pitaksirianan — software engineer and researcher in GPU computing, databases, and web development." />
-  <style>
-    :root {
-      --bg: #0b1020;
-      --card: #121a33;
-      --text: #e6ebff;
-      --muted: #a7b4df;
-      --accent: #63b3ff;
-      --accent-2: #9f7aea;
-      --border: #2a3565;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: var(--text);
-      background:
-        radial-gradient(circle at 0% 0%, rgba(99, 179, 255, 0.16), transparent 38%),
-        radial-gradient(circle at 100% 0%, rgba(159, 122, 234, 0.14), transparent 35%),
-        var(--bg);
-      line-height: 1.6;
-    }
-
-    a { color: inherit; }
-
-    .container {
-      width: min(1120px, 92vw);
-      margin: 0 auto;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      backdrop-filter: blur(8px);
-      background: rgba(11, 16, 32, 0.7);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    }
-
-    .nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 0;
-      gap: 1rem;
-    }
-
-    .brand {
-      font-weight: 700;
-      letter-spacing: 0.3px;
-    }
-
-    nav ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      color: var(--muted);
-      font-size: 0.96rem;
-    }
-
-    nav a { text-decoration: none; }
-    nav a:hover { color: var(--text); }
-
-    .hero {
-      display: grid;
-      grid-template-columns: 1.35fr 1fr;
-      gap: 2rem;
-      align-items: center;
-      padding: 4.5rem 0 3rem;
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 0.28rem 0.7rem;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      color: var(--muted);
-      font-size: 0.83rem;
-      margin-bottom: 1rem;
-    }
-
-    h1, h2, h3 { line-height: 1.2; margin: 0 0 0.8rem; }
-    h1 { font-size: clamp(2rem, 4vw, 3.15rem); }
-    h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); }
-    p { margin: 0 0 1rem; color: var(--muted); }
-
-    .hero-card,
-    .card {
-      background: linear-gradient(160deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 1.3rem;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
-    }
-
-    .cta {
-      display: flex;
-      gap: 0.8rem;
-      flex-wrap: wrap;
-      margin-top: 1.1rem;
-    }
-
-    .btn {
-      text-decoration: none;
-      border-radius: 10px;
-      padding: 0.68rem 1rem;
-      font-weight: 600;
-      font-size: 0.92rem;
-      border: 1px solid transparent;
-    }
-
-    .btn-primary {
-      background: linear-gradient(90deg, var(--accent), var(--accent-2));
-      color: #081124;
-    }
-
-    .btn-secondary {
-      border-color: var(--border);
-      color: var(--text);
-    }
-
-    section { padding: 2.2rem 0; }
-
-    .section-head {
-      display: flex;
-      justify-content: space-between;
-      gap: 1rem;
-      align-items: end;
-      margin-bottom: 1rem;
-    }
-
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1rem;
-    }
-
-    .project-card h3,
-    .pub-card h3 {
-      font-size: 1.04rem;
-      margin-bottom: 0.6rem;
-    }
-
-    .project-meta {
-      color: #c7d2f8;
-      font-size: 0.85rem;
-      margin-bottom: 0.7rem;
-    }
-
-    .links {
-      margin-top: 0.8rem;
-      font-size: 0.9rem;
-      display: flex;
-      gap: 0.8rem;
-      flex-wrap: wrap;
-      color: #d7e5ff;
-    }
-
-    .list {
-      display: grid;
-      gap: 0.9rem;
-    }
-
-    .pub-card p { margin: 0; }
-
-    footer {
-      margin-top: 2.4rem;
-      padding: 1.6rem 0 2.4rem;
-      color: var(--muted);
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 860px) {
-      .hero,
-      .grid-2 { grid-template-columns: 1fr; }
-      .section-head { align-items: flex-start; flex-direction: column; }
-    }
-  </style>
+  <title>Napath Pitaksirianan | Portfolio</title>
+  <link rel="stylesheet" href="/assets/style.css" />
 </head>
 <body>
-  <header>
-    <div class="container nav">
-      <div class="brand">Napath Pitaksirianan</div>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+<header>
+  <div class="container nav">
+    <a class="brand" href="/index.html">Napath Pitaksirianan</a>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="/publications.html">Publications</a></li>
+        <li><a href="https://blog.napath.com" target="_blank" rel="noopener">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="container">
+
+<section class="hero">
+  <div>
+    <span class="badge">Software Engineer · Researcher · Ph.D.</span>
+    <h1>Portfolio and Research Archive</h1>
+    <p>This site now hosts project details and downloadable PDFs directly in this repository.</p>
+    <p>Explore project deep-dives, publication records, patent/poster documents, and summary PDFs.</p>
+    <div class="actions">
+      <a class="btn primary" href="/projects.html">Browse Project Details</a>
+      <a class="btn ghost" href="/publications.html">View Publications & PDFs</a>
     </div>
-  </header>
+  </div>
+  <aside class="card">
+    <h3>Focus Areas</h3>
+    <p>GPU computing, accelerated database systems, graph mining, and scalable data analytics.</p>
+    <h3>Education</h3>
+    <p>Ph.D./M.S. Computer Science and Engineering, University of South Florida; B.Eng. Computer Engineering, Mahidol University.</p>
+  </aside>
+</section>
+<section>
+  <div class="grid two">
+    <article class="card"><h3>Projects</h3><p>Each project has a dedicated details page and a local PDF summary.</p><a class="btn ghost" href="/projects.html">Go to projects</a></article>
+    <article class="card"><h3>Publications</h3><p>Publications, patent, and posters are listed with local PDF files in this repo.</p><a class="btn ghost" href="/publications.html">Go to publications</a></article>
+  </div>
+</section>
 
-  <main class="container">
-    <section class="hero" id="about">
-      <div>
-        <span class="badge">Software Engineer · Researcher · Ph.D.</span>
-        <h1>Model Portfolio of Dr. Napath Pitaksirianan</h1>
-        <p>
-          I am a software engineer and researcher in the U.S. focused on high-performance
-          computing on GPUs, database systems, and web development.
-        </p>
-        <p>
-          I earned a Ph.D. and M.S. in Computer Science and Engineering from the University
-          of South Florida and a B.Eng. in Computer Engineering from Mahidol University, Thailand.
-        </p>
-        <div class="cta">
-          <a class="btn btn-primary" href="#projects">View Projects</a>
-          <a class="btn btn-secondary" href="#publications">Read Publications</a>
-        </div>
-      </div>
-      <aside class="hero-card">
-        <h3>Core Focus Areas</h3>
-        <p>GPU-accelerated database operations, parallel indexing/search algorithms, graph mining, and scalable scientific analytics.</p>
-        <h3>Highlights</h3>
-        <p>Patent co-inventor, conference posters at NVIDIA GTC, and journal/conference publications in parallel and data-intensive systems.</p>
-      </aside>
-    </section>
-
-    <section id="projects">
-      <div class="section-head">
-        <h2>Projects</h2>
-        <p>Selected technical projects.</p>
-      </div>
-      <div class="grid-2">
-        <article class="card project-card">
-          <h3>CheetahDB</h3>
-          <div class="project-meta">2018–2020</div>
-          <p>GPU-first DBMS supporting SQL with client/server communication via TCP/IP and JSON. Heavy operators (join, group-by, search) are accelerated on GPUs.</p>
-        </article>
-        <article class="card project-card">
-          <h3>Parallel Index Search for DBMS via GPUs</h3>
-          <div class="project-meta">2018–2020</div>
-          <p>Designed dynamic GPU index structures, low-overhead memory allocation, and exact/range search optimizations with cache-aware grouping.</p>
-        </article>
-        <article class="card project-card">
-          <h3>Support Measures for Frequent Patterns in Single-Graph Databases</h3>
-          <div class="project-meta">2017–2020</div>
-          <p>Built high-performance support-measure computation mapped to optimization formulations, preserving counting quality while improving runtime.</p>
-        </article>
-        <article class="card project-card">
-          <h3>Computing 2-Body Statistics on GPUs</h3>
-          <div class="project-meta">2015–2018</div>
-          <p>Developed decomposition and tuning strategies, analytical models, and a framework to auto-generate high-performance GPU code for 2-BS tasks.</p>
-        </article>
-        <article class="card project-card">
-          <h3>Tuple/Page Access Pattern Study in DBMS</h3>
-          <div class="project-meta">2014</div>
-          <p>Modified PostgreSQL to track page and tuple access frequencies to support improved buffer management and reduced disk traffic.</p>
-        </article>
-        <article class="card project-card">
-          <h3>GPU Keyword Search for Network Forensics</h3>
-          <div class="project-meta">2012</div>
-          <p>Applied CUDA-based KMP skip-search for lawful interception/forensics workloads and investigated GPU parameter tuning for performance.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="publications">
-      <div class="section-head">
-        <h2>Publications & Patent</h2>
-        <p>Selected publications and patent highlights.</p>
-      </div>
-      <div class="list">
-        <article class="card pub-card"><p>Algorithms and Framework for Computing 2-Body Statistics on Graphics Processing Units. Ph.D. Dissertation, University of South Florida (2020).</p></article>
-        <article class="card pub-card"><p>Counting Frequent Patterns in Large Labeled Graphs: A Hypergraph-Based Approach. Data Mining and Knowledge Discovery (2020).</p></article>
-        <article class="card pub-card"><p>Generalizing Design of Support Measures for Counting Frequent Patterns in Graphs. IEEE Big Data (2019) and SSDBM (2019).</p></article>
-        <article class="card pub-card"><p>Algorithms and Framework for Computing 2-Body Statistics on GPUs. Distributed and Parallel Databases (2018).</p></article>
-        <article class="card pub-card"><p>Efficient 2-Body Statistics Computation on GPUs: Parallelization and Beyond. ICPP (2016).</p></article>
-        <article class="card pub-card"><p>Parallel Keyword Searching Utilizing a CUDA GPU for Network Forensics. ICSEC (2012).</p></article>
-        <article class="card pub-card"><p><strong>Patent:</strong> Computing 2-Body Statistics on Graphics Processing Units (GPUs), US 11,119,771 B2.</p></article>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="card">
-        <h2>Contact</h2>
-        <p>This GitHub Page now hosts a portfolio-style landing page. For blog posts, use the original blog site separately.</p>
-        <p><a href="https://blog.napath.com" target="_blank" rel="noopener">Visit blog.napath.com ↗</a></p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">© 2026 Napath Pitaksirianan · Portfolio page for GitHub Pages deployment.</div>
-  </footer>
+</main>
+<footer><div class="container">© 2026 Napath Pitaksirianan · GitHub Pages Portfolio.</div></footer>
 </body>
 </html>
